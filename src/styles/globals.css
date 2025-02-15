@@ -68,13 +68,13 @@ h6 {
 }
 
 .swiper-pagination-bullet-active {
-  width: 35px !important;
+  width: 21px !important;
   height: 2px;
 }
 
 .swiper-pagination-bullets .swiper-pagination-bullet {
   background-color: #0088b7 !important;
-  width: 25px;
+  width: 12.75px;
   height: 2px;
 }
 

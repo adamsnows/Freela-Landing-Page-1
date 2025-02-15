@@ -8,7 +8,7 @@ export interface Person {
 
 const SpeakerCard: React.FC<Person> = ({ image, name }) => {
   return (
-    <div className="w-[205px] h-[264px] bg-gradient-to-b from-[#0e5bad] to-[#4723b5] rounded-lg border border-white p-4 flex flex-col font-thin font-rubik">
+    <div className="w-[205px] h-[264px] bg-gradient-to-b from-[#0e5bad] to-[#4723b5] rounded-lg border border-white p-4 flex flex-col font-thin font-rubik mx-auto">
       <div className="relative mt-4">
         <img
           src="/assets/brazil-rectangle.png"
