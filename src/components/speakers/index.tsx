@@ -23,18 +23,18 @@ const SpeakersSection = () => {
             src="/assets/ellipse-gradient.png
         "
             alt=""
-            className="-mt-[280] lg:-ms-[300] xl:-ms-[170] 2xl:-ms-[50] clip-half"
+            className="-mt-[280px] lg:-ms-[300] xl:-ms-[170] 2xl:-ms-[50] clip-half"
           />
           <img
             src="/assets/ellipse-gradient.png
         "
             alt=""
-            className="-mt-[280] clip-half"
+            className="-mt-[280px] clip-half"
           />
         </div>
       </div>
-      <div className="-mt-[344] h-[727px] bg-[#100d9d] flex flex-col items-center justify-center">
-        <span className="mx-auto font-rubik uppercase text-white font-thin text-4xl mt-[245] mb-[65px] text-center">
+      <div className="-mt-[344px] h-[727px] bg-[#100d9d] flex flex-col items-center justify-center">
+        <span className="mx-auto font-rubik uppercase text-white font-thin text-4xl mt-[245px] mb-[65px] text-center">
           <span className="font-medium text-primary">Speakers</span>{" "}
           Internacionais Confirmados
         </span>

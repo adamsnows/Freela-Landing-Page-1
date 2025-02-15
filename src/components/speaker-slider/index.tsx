@@ -29,8 +29,8 @@ const SpeakerSlider = () => {
 
   return (
     <>
-      <div className="">
-        <div className=" relative container mx-auto">
+      <div className="w-full">
+        <div className="w-full relative container mx-auto">
           <Swiper
             grabCursor={true}
             modules={[Navigation, Pagination, Autoplay]}
@@ -42,7 +42,7 @@ const SpeakerSlider = () => {
           >
             <SwiperSlide>
               <>
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[15px] mx-auto mb-[140] ">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[15px] mx-auto mb-[140px] ">
                   {people.map((person, index) => (
                     <SpeakerCard
                       key={index}
@@ -52,7 +52,7 @@ const SpeakerSlider = () => {
                   ))}
                 </div>
                 <div className="w-full flex justify-center">
-                  <Button className="mx-auto rounded-none w-[204px] h-[45px] text-base font-rubik font-medium -mt-[112]">
+                  <Button className="mx-auto rounded-none w-[204px] h-[45px] text-base font-rubik font-medium -mt-[112px]">
                     VER AGENDA
                   </Button>
                 </div>
@@ -60,7 +60,7 @@ const SpeakerSlider = () => {
             </SwiperSlide>
             <SwiperSlide>
               <>
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[15px] mx-auto mb-[140] ">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[15px] mx-auto mb-[140px] ">
                   {people.map((person, index) => (
                     <SpeakerCard
                       key={index}
@@ -70,7 +70,7 @@ const SpeakerSlider = () => {
                   ))}
                 </div>
                 <div className="w-full flex justify-center">
-                  <Button className="mx-auto rounded-none w-[204px] h-[45px] text-base font-rubik font-medium -mt-[112]">
+                  <Button className="mx-auto rounded-none w-[204px] h-[45px] text-base font-rubik font-medium -mt-[112px]">
                     VER AGENDA
                   </Button>
                 </div>
@@ -78,7 +78,7 @@ const SpeakerSlider = () => {
             </SwiperSlide>
             <SwiperSlide>
               <>
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[15px] mx-auto mb-[140] ">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[15px] mx-auto mb-[140px] ">
                   {people.map((person, index) => (
                     <SpeakerCard
                       key={index}
@@ -88,7 +88,7 @@ const SpeakerSlider = () => {
                   ))}
                 </div>
                 <div className="w-full flex justify-center">
-                  <Button className="mx-auto rounded-none w-[204px] h-[45px] text-base font-rubik font-medium -mt-[112]">
+                  <Button className="mx-auto rounded-none w-[204px] h-[45px] text-base font-rubik font-medium -mt-[112px]">
                     VER AGENDA
                   </Button>
                 </div>
@@ -96,7 +96,7 @@ const SpeakerSlider = () => {
             </SwiperSlide>
             <SwiperSlide>
               <>
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[15px] mx-auto mb-[140] ">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[15px] mx-auto mb-[140px] ">
                   {people.map((person, index) => (
                     <SpeakerCard
                       key={index}
@@ -106,7 +106,7 @@ const SpeakerSlider = () => {
                   ))}
                 </div>
                 <div className="w-full flex justify-center">
-                  <Button className="mx-auto rounded-none w-[204px] h-[45px] text-base font-rubik font-medium -mt-[112]">
+                  <Button className="mx-auto rounded-none w-[204px] h-[45px] text-base font-rubik font-medium -mt-[112px]">
                     VER AGENDA
                   </Button>
                 </div>
