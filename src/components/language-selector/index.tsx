@@ -47,7 +47,7 @@ const DropdownLanguageSelector = () => {
             alt="Spain Icon"
             layout="fixed"
           />
-          SPANISH
+          ESPAÑOL
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

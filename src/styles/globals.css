@@ -58,17 +58,22 @@
   }
 }
 
-@layer base {
-  /* h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-rubik), sans-serif;
-  } */
-  * {
-    outline: none !important;
-    font-family: var(--font-lato), sans-serif;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-rubik), sans-serif;
+}
+
+.swiper-pagination-bullet-active {
+  width: 35px !important;
+  height: 2px;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: #0088b7 !important;
+  width: 25px;
+  height: 2px;
 }
