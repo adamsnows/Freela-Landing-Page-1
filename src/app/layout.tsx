@@ -26,8 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${rubik.variable} ${lato.variable}`}>
-      <body>{children}</body>
+    <html lang="en" className={`${lato.variable} ${rubik.variable}  `}>
+      <body className="h-screen w-screen bg-background text-base">
+        {children}
+      </body>
     </html>
   );
 }

@@ -61,6 +61,9 @@ export default {
         sans: ["var(--font-lato)", "sans-serif"],
         rubik: ["var(--font-rubik)", "sans-serif"],
       },
+      fontSize: {
+        base: "0.75rem",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

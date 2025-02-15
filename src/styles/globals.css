@@ -4,15 +4,15 @@
 
 @layer base {
   :root {
-    --background: #050375; /* Azul-Congresso */
-    --primary: #00b0d8; /* Blue-Huntington */
-    --secondary: #717171; /* Gray-Huntington */
-    --muted: #eb526e; /* Magenta-Huntington */
-    --accent: #a2c746; /* Green-Huntington */
-    --destructive: #f5a732; /* Orange-Huntington */
-    --border: #101010; /* Black */
-    --input: #98c6e9; /* Blue light-Huntington */
-    --ring: #005ca1; /* Blue dark-Huntington */
+    --background: 243 94% 24%; /* Azul-Congresso */
+    --primary: 191 100% 42%; /* Blue-Huntington */
+    --secondary: 0 0% 44%; /* Gray-Huntington */
+    --muted: 348 79% 62%; /* Magenta-Huntington */
+    --accent: 78 54% 53%; /* Green-Huntington */
+    --destructive: 38 92% 58%; /* Orange-Huntington */
+    --border: 0 0% 6%; /* Black */
+    --input: 205 67% 76%; /* Blue light-Huntington */
+    --ring: 207 100% 32%; /* Blue dark-Huntington */
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
@@ -59,12 +59,16 @@
 }
 
 @layer base {
-  h1,
+  /* h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
     font-family: var(--font-rubik), sans-serif;
+  } */
+  * {
+    outline: none !important;
+    font-family: var(--font-lato), sans-serif;
   }
 }
