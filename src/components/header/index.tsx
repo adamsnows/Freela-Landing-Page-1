@@ -14,42 +14,17 @@ const Header = () => {
         quality={100}
       />
 
-      <div className="flex flex-grow justify-center items-center space-x-4 font-light font-lato gap-6">
-        <Link
-          href="#"
-          className="text-white font-rubik font-light text-sm hover:text-primary"
-        >
-          Sobre
-        </Link>
-        <Link
-          href="#"
-          className="text-white font-rubik font-light text-sm hover:text-primary"
-        >
-          Speakers
-        </Link>
-        <Link
-          href="#"
-          className="text-white font-rubik font-light text-sm hover:text-primary"
-        >
-          Agenda científica
-        </Link>
-        <Link
-          href="#"
-          className="text-white font-rubik font-light text-sm hover:text-primary"
-        >
-          Patrocinadores
-        </Link>
-        <Link
-          href="#"
-          className="text-white font-rubik font-light text-sm hover:text-primary"
-        >
-          FAQ
-        </Link>
+      <div className="flex flex-grow justify-center items-center space-x-2 gap-6 font-thin text-white text-sm hover:text-primary">
+        <Link href="#">Sobre</Link>
+        <Link href="#">Speakers</Link>
+        <Link href="#">Agenda científica</Link>
+        <Link href="#">Patrocinadores</Link>
+        <Link href="#">FAQ</Link>
       </div>
       <div className="flex gap-4">
         <Button
           variant="terciary"
-          className="rounded-none ms-auto text-white font-medium uppercase w-[140px] h-[45px] text-base"
+          className="rounded-none ms-auto text-white font-medium font-rubik uppercase w-[140px] h-[45px] text-base"
         >
           Inscreva-se
         </Button>
@@ -58,5 +33,4 @@ const Header = () => {
     </div>
   );
 };
-
 export default Header;

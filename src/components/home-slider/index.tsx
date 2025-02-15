@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Button } from "../ui/button";
 
-const FullWidthSwiper = () => {
+const Slider = () => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const FullWidthSwiper = () => {
           slidesPerView={1}
           navigation={true}
           pagination={{ clickable: true }}
-          // autoplay={{ delay: 10000 }}
+          autoplay={{ delay: 10000 }}
           onSlideChange={() => setProgress(0)}
         >
           <SwiperSlide>
@@ -50,7 +50,7 @@ const FullWidthSwiper = () => {
                 </div>
                 <Button
                   variant="terciary"
-                  className="rounded-none ms-auto text-white font-medium uppercase w-full mt-8 mb-9 h-[45px] text-base"
+                  className="rounded-none ms-auto text-white font-medium font-rubik uppercase w-full mt-8 mb-9 h-[45px] text-base"
                 >
                   Inscreva-se
                 </Button>
@@ -74,7 +74,7 @@ const FullWidthSwiper = () => {
                 </div>
                 <Button
                   variant="terciary"
-                  className="rounded-none ms-auto text-white font-medium uppercase w-full mt-8 mb-9 h-[45px] text-base"
+                  className="rounded-none ms-auto text-white font-medium font-rubik uppercase w-full mt-8 mb-9 h-[45px] text-base"
                 >
                   Inscreva-se
                 </Button>
@@ -98,7 +98,7 @@ const FullWidthSwiper = () => {
                 </div>
                 <Button
                   variant="terciary"
-                  className="rounded-none ms-auto text-white font-medium uppercase w-full mt-8 mb-9 h-[45px] text-base"
+                  className="rounded-none ms-auto text-white font-medium font-rubik uppercase w-full mt-8 mb-9 h-[45px] text-base"
                 >
                   Inscreva-se
                 </Button>
@@ -122,7 +122,7 @@ const FullWidthSwiper = () => {
                 </div>
                 <Button
                   variant="terciary"
-                  className="rounded-none ms-auto text-white font-medium uppercase w-full mt-8 mb-9 h-[45px] text-base"
+                  className="rounded-none ms-auto text-white font-medium font-rubik uppercase w-full mt-8 mb-9 h-[45px] text-base"
                 >
                   Inscreva-se
                 </Button>
@@ -141,4 +141,4 @@ const FullWidthSwiper = () => {
   );
 };
 
-export default FullWidthSwiper;
+export default Slider;
