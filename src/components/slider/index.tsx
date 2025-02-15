@@ -30,17 +30,17 @@ const FullWidthSwiper = () => {
           slidesPerView={1}
           navigation={true}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 10000 }}
+          // autoplay={{ delay: 10000 }}
           onSlideChange={() => setProgress(0)}
         >
           <SwiperSlide>
             <div className="relative">
               <img
-                className="object-cover z-10"
+                className="object-cover z-10  mx-auto"
                 src="/assets/slider-1.png"
                 alt="Slide 1"
               />
-              <div className="hidden flex-col z-20 text-white max-w-[315px] text-end absolute right lg:flex bottom-0 end-0  lg:-mb-5 lg:end-[80px] xl:end-[105px] 2xl:end-[365px] p-4 text-lg">
+              <div className="hidden flex-col z-20 text-white max-w-[315px] text-end absolute right lg:flex bottom-0 end-0 lg:-mb-5 lg:end-[80px] xl:end-[105px] 2xl:end-[235px] p-4 text-lg">
                 <div className="flex flex-col">
                   <span className="font-bold">10 de abril</span>
                   <span className="font-thin">
@@ -60,11 +60,11 @@ const FullWidthSwiper = () => {
           <SwiperSlide>
             <div className="relative">
               <img
-                className="object-cover z-10"
+                className="object-cover z-10  mx-auto"
                 src="/assets/slider-1.png"
                 alt="Slide 1"
               />
-              <div className="hidden flex-col z-20 text-white max-w-[315px] text-end absolute right lg:flex bottom-0 end-0  lg:-mb-5 lg:end-[80px] xl:end-[105px] 2xl:end-[365px] p-4 text-lg">
+              <div className="hidden flex-col z-20 text-white max-w-[315px] text-end absolute right lg:flex bottom-0 end-0 lg:-mb-5 lg:end-[80px] xl:end-[105px] 2xl:end-[235px] p-4 text-lg">
                 <div className="flex flex-col">
                   <span className="font-bold">10 de abril</span>
                   <span className="font-thin">
@@ -84,11 +84,11 @@ const FullWidthSwiper = () => {
           <SwiperSlide>
             <div className="relative">
               <img
-                className="object-cover z-10"
+                className="object-cover z-10  mx-auto"
                 src="/assets/slider-1.png"
                 alt="Slide 1"
               />
-              <div className="hidden flex-col z-20 text-white max-w-[315px] text-end absolute right lg:flex bottom-0 end-0  lg:-mb-5 lg:end-[80px] xl:end-[105px] 2xl:end-[365px] p-4 text-lg">
+              <div className="hidden flex-col z-20 text-white max-w-[315px] text-end absolute right lg:flex bottom-0 end-0 lg:-mb-5 lg:end-[80px] xl:end-[105px] 2xl:end-[235px] p-4 text-lg">
                 <div className="flex flex-col">
                   <span className="font-bold">10 de abril</span>
                   <span className="font-thin">
@@ -108,11 +108,11 @@ const FullWidthSwiper = () => {
           <SwiperSlide>
             <div className="relative">
               <img
-                className="object-cover z-10"
+                className="object-cover z-10  mx-auto"
                 src="/assets/slider-1.png"
                 alt="Slide 1"
               />
-              <div className="hidden flex-col z-20 text-white max-w-[315px] text-end absolute right lg:flex bottom-0 end-0  lg:-mb-5 lg:end-[80px] xl:end-[105px] 2xl:end-[365px] p-4 text-lg">
+              <div className="hidden flex-col z-20 text-white max-w-[315px] text-end absolute right lg:flex bottom-0 end-0 lg:-mb-5 lg:end-[80px] xl:end-[105px] 2xl:end-[235px] p-4 text-lg">
                 <div className="flex flex-col">
                   <span className="font-bold">10 de abril</span>
                   <span className="font-thin">
