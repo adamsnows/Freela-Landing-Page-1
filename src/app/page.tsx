@@ -3,6 +3,7 @@ import CircleCountdownTimer from "@/components/circle-timer";
 import Header from "@/components/header";
 import Slider from "@/components/home-slider";
 import MedicineFutureSection from "@/components/medicine-future";
+import ScheduleSection from "@/components/schedule-section";
 import SpeakersSection from "@/components/speakers";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <MedicineFutureSection />
       <BirdBanner />
       <CircleCountdownTimer />
+      <ScheduleSection />
     </div>
   );
 }

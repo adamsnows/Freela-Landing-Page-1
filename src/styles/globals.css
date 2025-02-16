@@ -81,3 +81,11 @@ h6 {
 .clip-half {
   clip-path: inset(0 0 50% 0);
 }
+
+* {
+  outline: none !important;
+}
+
+.child-container {
+  border-radius: calc(3.5rem - 1px);
+}
