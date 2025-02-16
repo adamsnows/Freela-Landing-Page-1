@@ -29,7 +29,7 @@ const SpeakerSlider = () => {
 
   return (
     <>
-      <div className="w-full relative container mx-auto">
+      <div className="w-full max-w-[1090px] relative container mx-auto">
         <Swiper
           grabCursor={true}
           modules={[Navigation, Pagination, Autoplay]}
