@@ -14,12 +14,25 @@ const Header = () => {
         quality={100}
       />
 
-      <div className="flex flex-grow justify-center items-center space-x-2 gap-6 font-thin text-white text-sm hover:text-primary">
-        <Link href="#">Sobre</Link>
-        <Link href="#">Speakers</Link>
-        <Link href="#">Agenda científica</Link>
-        <Link href="#">Patrocinadores</Link>
-        <Link href="#">FAQ</Link>
+      <div className="flex flex-grow justify-center items-center space-x-2 gap-6 font-thin text-white text-sm ">
+        <Link href="#" className="hover:text-primary">
+          Sobre
+        </Link>
+        <Link href="#" className="hover:text-primary">
+          Speakers
+        </Link>
+        <Link href="#" className="hover:text-primary">
+          Agenda científica
+        </Link>
+        <Link href="#" className="hover:text-primary">
+          Comissão científica
+        </Link>
+        <Link href="#" className="hover:text-primary">
+          Patrocinadores
+        </Link>
+        <Link href="#" className="hover:text-primary">
+          FAQ
+        </Link>
       </div>
       <div className="flex gap-4">
         <Button
