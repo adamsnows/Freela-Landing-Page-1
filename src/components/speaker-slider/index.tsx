@@ -114,7 +114,7 @@ const SpeakerSlider = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className=" left-0 w-full h-[0.5px] bg-gray-200 mt-10">
+        <div className=" left-0 w-full h-[0.5px] bg-gray-200 mt-8">
           <div
             className="h-full bg-primary transition-all duration-300"
             style={{ width: `${progress}%` }}

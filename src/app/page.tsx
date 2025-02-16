@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Slider from "@/components/home-slider";
+import MedicineFutureSection from "@/components/medicine-future";
 import SpeakersSection from "@/components/speakers";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Slider />
       <SpeakersSection />
+      <MedicineFutureSection />
     </div>
   );
 }

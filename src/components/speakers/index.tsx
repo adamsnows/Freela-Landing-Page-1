@@ -33,7 +33,7 @@ const SpeakersSection = () => {
           />
         </div>
       </div>
-      <div className="-mt-[344px] h-[727px] bg-[#100d9d] flex flex-col items-center justify-center">
+      <div className="-mt-[344px] h-[787px] bg-[#100d9d] flex flex-col items-center justify-center">
         <span className="mx-auto font-rubik uppercase text-white font-thin text-4xl mt-[245px] mb-[65px] text-center">
           <span className="font-medium text-primary">Speakers</span>{" "}
           Internacionais Confirmados
