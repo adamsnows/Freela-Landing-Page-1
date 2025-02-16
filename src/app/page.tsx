@@ -1,3 +1,4 @@
+import BirdBanner from "@/components/bird-banner";
 import Header from "@/components/header";
 import Slider from "@/components/home-slider";
 import MedicineFutureSection from "@/components/medicine-future";
@@ -10,6 +11,7 @@ export default function Home() {
       <Slider />
       <SpeakersSection />
       <MedicineFutureSection />
+      <BirdBanner />
     </div>
   );
 }

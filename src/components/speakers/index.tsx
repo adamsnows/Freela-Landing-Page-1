@@ -20,16 +20,16 @@ const SpeakersSection = () => {
         <div className="w-full  max-w-[900px] h-[505px] bg-white mx-auto z-10" />
         <div className="flex max-w-[1280px] h-[120px] z-0">
           <img
-            src="/assets/ellipse-gradient.png
+            src="/assets/blur/ellipse-gradient.png
         "
             alt=""
-            className="-mt-[280px] lg:-ms-[300] xl:-ms-[170] 2xl:-ms-[50] clip-half"
+            className="-mt-[271px] lg:-ms-[300] xl:-ms-[170] 2xl:-ms-[50] clip-half"
           />
           <img
-            src="/assets/ellipse-gradient.png
+            src="/assets/blur/ellipse-gradient.png
         "
             alt=""
-            className="-mt-[280px] clip-half"
+            className="-mt-[271px] clip-half"
           />
         </div>
       </div>
