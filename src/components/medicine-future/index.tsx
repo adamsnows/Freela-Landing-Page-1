@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 
 const MedicineFutureSection = () => {
   return (
-    <div className="bg-background h-[590px] w-full mt-10">
+    <div className="bg-background max-w-[1088px] mx-auto h-[590px] w-full mt-10">
       <div className="grid grid-cols-2 container mx-auto text-white">
         <div className="flex flex-col gap-10">
           <span className="font-rubik text-[32px] uppercase max-w-[500px]">
@@ -48,7 +48,7 @@ const MedicineFutureSection = () => {
             </div>
           </div>
         </div>
-        <div className="relative">
+        <div className="relative ms-[90px]">
           <img
             src="/assets/blur/purple-ellipse-gradient.png"
             alt=""
