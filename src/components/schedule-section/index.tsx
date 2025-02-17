@@ -4,7 +4,7 @@ import DropdownLanguageSelector from "../language-selector";
 
 const ScheduleSection = () => {
   return (
-    <div className="mt-[142px] bg-background container mx-auto flex flex-col">
+    <div className="mt-[142px] bg-background container mx-auto flex flex-col relative">
       <div className="flex flex-col max-w-[347px] justify-center items-center mx-auto">
         <h1 className="uppercase text-[28px] text-primary text-center">
           Programação
@@ -20,6 +20,11 @@ const ScheduleSection = () => {
         sem aviso prévio.
       </span>
       <ConferenceSchedule />
+      <img
+        src="/assets/blur/purple-ellipse-gradient.png"
+        alt=""
+        className="absolute bottom-0 start-[-400px]"
+      />
     </div>
   );
 };

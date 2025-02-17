@@ -35,7 +35,6 @@ const DropdownLanguageSelector = ({
           height={15}
           quality={100}
           alt="Brazilian Icon"
-          layout="fixed"
         />
         PT
         {open ? <FaAngleUp /> : <FaAngleDown />}

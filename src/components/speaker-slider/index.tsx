@@ -1,5 +1,5 @@
 "use client";
-import SpeakerCard, { Person } from "../card";
+import SpeakerCard, { Person } from "../card/speaker-card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { useState, useEffect } from "react";
