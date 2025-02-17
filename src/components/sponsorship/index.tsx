@@ -76,7 +76,7 @@ const SponsorshipSection = () => {
           </div>
         )}
         {sponsorshipData[2].logos.length > 6 && (
-          <div className="justify-center grid grid-cols-3 max-w-[840px] w-full mb-[60px]">
+          <div className="justify-center grid grid-cols-3 max-w-[840px] w-full mb-[60px] items-center">
             {sponsorshipData[2].logos.slice(6).map(({ src, alt }, index) => (
               <img key={index} src={src} alt={alt} />
             ))}
