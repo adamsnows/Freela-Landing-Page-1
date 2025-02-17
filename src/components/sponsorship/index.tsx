@@ -29,7 +29,13 @@ const SponsorshipSection = () => {
                 alt=""
                 className={`w-[520px] ${index === 0 ? "me-auto" : "ms-auto"}`}
               />
-              <div className="grid grid-cols-2 gap-3 mx-auto mt-[45px] items-center">
+              <div
+                className={`grid grid-cols-2 gap-3 ${
+                  index === 0
+                    ? "me-auto mt-[45px]"
+                    : "ms-[325px] w-[270px] mt-[20px]"
+                }  items-center`}
+              >
                 {logos.map(({ src, alt }, logoIndex) => (
                   <img
                     key={logoIndex}
