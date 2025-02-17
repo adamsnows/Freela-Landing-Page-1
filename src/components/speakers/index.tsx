@@ -1,10 +1,21 @@
+"use client";
 import SpeakerSlider from "../speaker-slider";
+import YouTube from "react-youtube";
 
 /* eslint-disable @next/next/no-img-element */
 const SpeakersSection = () => {
+  const videoId = "jAckVuEY_Rc";
+  const opts = {
+    height: "505",
+    width: "100%",
+    playerVars: {
+      autoplay: 0,
+    },
+  };
+
   return (
     <>
-      <div className="h-[927px] bg-background flex flex-col container mx-auto py-[54px]">
+      <div className="h-[933px] bg-background flex flex-col container mx-auto py-[54px]">
         <div className="flex gap-4 items-center justify-center text-white text-[32px] font-light">
           <img src="/assets/calendar.png" alt="Calendar" />
           <span>
@@ -17,7 +28,11 @@ const SpeakersSection = () => {
           alt=""
           className="w-[720px] mx-auto mt-3 mb-10"
         />
-        <div className="w-full  max-w-[900px] h-[505px] bg-white mx-auto z-10" />
+
+        <div className="video-player w-full  max-w-[900px] h-[505px]  mx-auto z-10">
+          <YouTube videoId={videoId} opts={opts} />
+        </div>
+
         <div className="flex max-w-[1280px] h-[120px] z-0">
           <img
             src="/assets/blur/ellipse-gradient.png

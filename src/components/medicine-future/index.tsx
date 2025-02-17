@@ -59,7 +59,10 @@ const MedicineFutureSection = () => {
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={0}
             slidesPerView={1}
-            navigation={true}
+            navigation={{
+              nextEl: ".custom-swiper .custom-button-next",
+              prevEl: ".custom-swiper .custom-button-prev",
+            }}
             pagination={{
               clickable: true,
               el: ".custom-pagination",
