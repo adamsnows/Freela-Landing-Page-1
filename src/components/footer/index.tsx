@@ -15,7 +15,7 @@ const Footer = () => {
         <span className="font-light">congresso@huntington.com.br</span>
         <div className="flex gap-4 items-center">
           <span>SIGA-NOS</span>
-          <span className="flex gap-2 items-center text-base cursor-pointer">
+          <span className="flex gap-2 items-center text-base cursor-pointer font-light">
             <FaInstagram className="text-lg" /> INSTAGRAM
           </span>
         </div>
