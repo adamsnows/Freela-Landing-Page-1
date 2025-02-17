@@ -14,7 +14,7 @@ const Header = () => {
         quality={100}
       />
 
-      <div className="flex flex-grow justify-center items-center space-x-2 gap-6 font-thin text-white text-sm ">
+      <div className="flex flex-grow justify-center items-center space-x-2 gap-6 font-thin text-white text-sm ms-20 ">
         <Link href="#" className="hover:text-primary">
           Sobre
         </Link>

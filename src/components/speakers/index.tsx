@@ -9,13 +9,13 @@ const SpeakersSection = () => {
           <img src="/assets/calendar.png" alt="Calendar" />
           <span>
             11 e 12 de Abril de 2024 •{" "}
-            <span className="text-primary font-medium">São Paulo/SP</span>
+            <span className="text-primary font-light">São Paulo/SP</span>
           </span>
         </div>
         <img
-          src="/assets/gradient-rectangle.png"
+          src="/assets/line-gradient.png"
           alt=""
-          className="max-w-[720px] mx-auto mt-3 mb-10"
+          className="w-[720px] mx-auto mt-3 mb-10"
         />
         <div className="w-full  max-w-[900px] h-[505px] bg-white mx-auto z-10" />
         <div className="flex max-w-[1280px] h-[120px] z-0">
