@@ -89,3 +89,9 @@ h6 {
 .child-container {
   border-radius: calc(3.5rem - 1px);
 }
+
+input::placeholder {
+  color: white !important;
+  font-weight: 400;
+  font-size: 14px;
+}

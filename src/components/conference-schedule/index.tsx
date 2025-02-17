@@ -1,6 +1,6 @@
 "use client";
 
-import { RoomType, scheduleData } from "@/data/scheduleData";
+import { RoomType, scheduleData } from "@/data/schedule-data";
 import { useState } from "react";
 import ReactCountryFlag from "react-country-flag";
 
@@ -30,38 +30,63 @@ const ConferenceSchedule = () => {
   const [selectedRoom, setSelectedRoom] = useState<RoomType>("principal");
 
   return (
-    <div className="max-w-5xl mx-auto p-4 text-white rounded-xl">
+    <div className="max-w-5xl mx-auto p-4 text-white rounded-xl transition-all duration-300">
       <div className="flex justify-center gap-4">
-        {Object.keys(scheduleData).map((date) => (
-          <div key={date} className="w-[312px] h-[72px] rounded-full ">
-            {selectedDay === date ? (
-              <button
-                className="w-full h-full rounded-full bg-gradient-to-r from-[#B04EE1] to-[#01AFD9] text-white"
-                onClick={() => {
-                  setSelectedDay(date);
-                  setSelectedRoom("principal");
-                }}
-              >
-                {formatDate(date)}
-              </button>
-            ) : (
-              <button
-                type="button"
-                className=" group flex w-[312px] h-[72px] items-center justify-center rounded-full bg-gradient-to-r from-[#B04EE1] to-[#01AFD9] p-[2px] text-white transition-all duration-300 hover:bg-gradient-to-l"
-                onClick={() => {
-                  setSelectedDay(date);
-                  setSelectedRoom("principal");
-                }}
-              >
-                <div className="flex h-full w-full items-center justify-center rounded-full bg-background group-hover:bg-gradient-to-r group-hover:from-[#B04EE1] group-hover:to-[#01AFD9] group-hover:transition group-hover:duration-300 group-hover:ease-in-out">
+        {Object.keys(scheduleData).map((date) => {
+          const dayEvents = scheduleData[date].principal;
+          const dayType = dayEvents.length > 0 ? dayEvents[0].dayType : "";
+
+          return (
+            <div key={date} className="w-[312px] h-[72px] rounded-full">
+              {selectedDay === date ? (
+                <button
+                  className="w-full h-full rounded-full bg-gradient-to-r from-[#B04EE1] to-[#01AFD9] text-white flex flex-col items-center"
+                  onClick={() => {
+                    setSelectedDay(date);
+                    setSelectedRoom("principal");
+                  }}
+                >
+                  {dayType && (
+                    <div className="mt-4 text-xs text-white uppercase">
+                      {dayType}
+                    </div>
+                  )}
                   {formatDate(date)}
-                </div>
-              </button>
-            )}
-          </div>
-        ))}
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  className="group flex w-[312px] h-[72px] items-center justify-center rounded-full bg-gradient-to-r from-[#B04EE1] to-[#01AFD9] p-[2px] text-white transition-all duration-300 hover:bg-gradient-to-l"
+                  onClick={() => {
+                    setSelectedDay(date);
+                    setSelectedRoom("principal");
+                  }}
+                >
+                  <div className="h-full w-full items-center justify-center rounded-full bg-background group-hover:bg-gradient-to-r group-hover:from-[#B04EE1] group-hover:to-[#01AFD9] group-hover:transition group-hover:duration-300 group-hover:ease-in-out flex flex-col">
+                    {dayType && (
+                      <div className=" text-xs text-white uppercase">
+                        {dayType}
+                      </div>
+                    )}
+                    {formatDate(date)}
+                  </div>
+                </button>
+              )}
+            </div>
+          );
+        })}
       </div>
 
+      <div className="flex flex-col my-5">
+        <span className="font-normal">
+          *No dia 10 haverá uma Business Class voltada a médicos e profissionais
+          de saúde que administram clinicas.
+        </span>
+        <span className="font-light">
+          Nos dias 11 e 12 de abril as palestras são abertas ao público, escolha
+          suas palestras e garanta seu ingresso no Congresso
+        </span>
+      </div>
       <div className="bg-gradient-to-b from-[#57CBE6]/15 to-[#100D9D]/10 rounded-lg px-12 py-6 mt-4">
         <div className="flex justify-center gap-4">
           {(["principal", "laboratorio"] as RoomType[]).map((room) => {

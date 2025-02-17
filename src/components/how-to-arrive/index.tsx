@@ -44,7 +44,7 @@ const HowToArriveSection = () => {
   }, []);
 
   return (
-    <div className="h-[2000px] bg-gradient relative">
+    <div className="bg-gradient relative">
       <img
         src="/assets/blur/purple-ellipse-gradient.png"
         alt=""
@@ -55,7 +55,7 @@ const HowToArriveSection = () => {
         alt=""
         className="absolute end-[-300px] top-[200px]"
       />
-      <div className="w-full grid grid-cols-2 items-center container mx-auto text-white mt-[90px] mb-[114px]">
+      <div className="w-full max-w-[1100px] grid grid-cols-2 items-center container mx-auto text-white mt-[90px] mb-[114px]">
         <div className="flex flex-col">
           <h1 className="text-[32px] mb-[60px]">COMO CHEGAR</h1>
           <h2 className="text-[24px] mb-[32px]">Endereço:</h2>
@@ -66,10 +66,10 @@ const HowToArriveSection = () => {
               Alameda Santos, 1437 - Cerqueira César, São Paulo
             </span>
           </div>
-          <img src="/assets/line-gradient.png" alt="" />
+          <img src="/assets/line-gradient.png" alt="" className="w-full" />
         </div>
 
-        <div className="w-[683px] h-[386px] rounded-xl overflow-hidden shadow-lg">
+        <div className="ms-auto w-full max-w-[683px] h-[386px] rounded-xl overflow-hidden shadow-lg">
           {L && customIcon && (
             <MapContainer
               center={position}
@@ -87,15 +87,6 @@ const HowToArriveSection = () => {
             </MapContainer>
           )}
         </div>
-      </div>
-      <div className="container mx-auto text-center text-primary text-[24px]">
-        <h1 className="mb-4 font-medium">REALIZAÇÃO</h1>
-        <img src="/assets/line-separator.png" alt="" className="w-full mt" />
-        <img
-          src="/assets/logo-white.png"
-          alt=""
-          className="w-[234px] h-[60px] mx-auto mt-[40px]"
-        />
       </div>
     </div>
   );

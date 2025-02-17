@@ -1,7 +1,7 @@
 import BirdBanner from "@/components/bird-banner";
 import CircleCountdownTimer from "@/components/circle-timer";
 import Footer from "@/components/footer";
-import FAQ from "@/components/frequently-questions";
+import FAQSection from "@/components/frequently-questions";
 import Header from "@/components/header";
 import Slider from "@/components/home-slider";
 import HowToArriveSection from "@/components/how-to-arrive";
@@ -9,6 +9,7 @@ import MedicineFutureSection from "@/components/medicine-future";
 import OrganizingCommitteeSection from "@/components/organizing-committee";
 import ScheduleSection from "@/components/schedule-section";
 import SpeakersSection from "@/components/speakers";
+import SponsorshipSection from "@/components/sponsorship";
 import StayInSection from "@/components/stay-in";
 
 export default function Home() {
@@ -22,9 +23,10 @@ export default function Home() {
       <CircleCountdownTimer />
       <ScheduleSection />
       <OrganizingCommitteeSection />
-      <FAQ />
+      <FAQSection />
       <StayInSection />
       <HowToArriveSection />
+      <SponsorshipSection />
       <Footer />
     </div>
   );

@@ -10,6 +10,7 @@ export interface Event {
   secondLineDescription?: string;
   from?: string;
   other?: string;
+  dayType?: string;
 }
 
 export type ScheduleData = Record<string, Record<RoomType, Event[]>>;
@@ -18,6 +19,7 @@ export const scheduleData: ScheduleData = {
   "04-10-2025": {
     principal: [
       {
+        dayType: "Business Class",
         day: "04-10-2025",
         time: "10h00",
         title: "Abertura",
@@ -77,6 +79,7 @@ export const scheduleData: ScheduleData = {
   "04-11-2025": {
     principal: [
       {
+        dayType: "CONGRESSO • 1º DIA",
         day: "04-11-2025",
         time: "08h30 - 09h00",
         title: "ABERTURA",
@@ -134,6 +137,7 @@ export const scheduleData: ScheduleData = {
   "04-12-2025": {
     principal: [
       {
+        dayType: "CONGRESSO • 2º DIA",
         day: "04-12-2025",
         time: "10h00",
         title: "Marketing Digital",
