@@ -60,15 +60,19 @@ const MedicineFutureSection = () => {
             spaceBetween={0}
             slidesPerView={1}
             navigation={true}
-            pagination={{ clickable: true }}
+            pagination={{
+              clickable: true,
+              el: ".custom-pagination",
+            }}
             autoplay={{ delay: 10000 }}
+            className="custom-swiper"
           >
             <SwiperSlide>
               <img src="/assets/people.png" alt="" className="mx-auto" />
             </SwiperSlide>
             <SwiperSlide>
               <img src="/assets/people.png" alt="" className="mx-auto" />
-            </SwiperSlide>{" "}
+            </SwiperSlide>
             <SwiperSlide>
               <img src="/assets/people.png" alt="" className="mx-auto" />
             </SwiperSlide>
@@ -76,9 +80,13 @@ const MedicineFutureSection = () => {
               <img src="/assets/people.png" alt="" className="mx-auto" />
             </SwiperSlide>
           </Swiper>
+
           <span className="w-full text-center block font-thin mt-2 text-[11px]">
             Imagem do evento realizado em 2023
           </span>
+          <div className="flex items-center justify-center w-full absolute left-1/2 -ms-10 mt-2">
+            <div className="custom-pagination " />
+          </div>
         </div>
       </div>
     </div>
